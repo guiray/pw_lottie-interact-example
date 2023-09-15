@@ -55,5 +55,8 @@
   "license": "MIT",
   "peerDependencies": {
     "webpack": "^5.0.0"
+  },
+  "dependencies": {
+    "lottie-web": "^5.12.2"
   }
 }

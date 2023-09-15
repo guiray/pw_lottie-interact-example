@@ -10,7 +10,7 @@ export default class Lottie {
   init() {
     const animation = lottieWeb.loadAnimation({
       container: document.querySelector('.animation'),
-      path: 'assets/lottie/demo.json',
+      path: 'assets/lottie/nasa_logo.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
