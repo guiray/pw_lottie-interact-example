@@ -57,6 +57,8 @@
     "webpack": "^5.0.0"
   },
   "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.2",
+    "@lottiefiles/lottie-player": "^2.0.2",
     "lottie-web": "^5.12.2"
   }
 }
