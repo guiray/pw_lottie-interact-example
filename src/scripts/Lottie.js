@@ -1,4 +1,6 @@
 import lottieWeb from 'lottie-web';
+import { LottieInteractivity } from '@lottiefiles/lottie-interactivity';
+import create from '@lottiefiles/lottie-interactivity';
 
 export default class Lottie {
   constructor() {
@@ -15,6 +17,18 @@ export default class Lottie {
       loop: true,
       autoplay: true,
       name: 'Demo Animation',
+    });
+
+    LottieInteractivity.create({
+      player: '#firstLottie',
+      mode: 'scroll',
+      actions: [
+        {
+          visibility: [0, 1],
+          type: 'seek',
+          frames: [0, 300],
+        },
+      ],
     });
   }
 }

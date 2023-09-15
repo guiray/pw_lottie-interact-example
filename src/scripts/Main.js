@@ -1,6 +1,5 @@
-import Lottie from './Lottie';
-import LottiePlayer from './LottiePlayer';
 import { LottieInteractivity } from '@lottiefiles/lottie-interactivity';
+import Lottie from './Lottie';
 
 class Main {
   constructor() {
@@ -9,7 +8,6 @@ class Main {
 
   init() {
     new Lottie();
-    new LottiePlayer();
     new LottieInteractivity();
   }
 }
