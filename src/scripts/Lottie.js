@@ -1,34 +1,32 @@
-import lottieWeb from 'lottie-web';
-import { LottieInteractivity } from '@lottiefiles/lottie-interactivity';
-import create from '@lottiefiles/lottie-interactivity';
+import LottieWeb from "lottie-web";
+import { Create } from "@lottiefiles/lottie-interactivity";
 
 export default class Lottie {
   constructor() {
     this.init();
   }
 
-  // Défi: Créer une composante Lottie qui, avec un attribut data, permet de spécifier
-  // le path json à charger
   init() {
-    const animation = lottieWeb.loadAnimation({
-      container: document.querySelector('.animation'),
-      path: 'assets/lottie/nasa_logo.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: 'Demo Animation',
-    });
+    // const animation = LottieWeb.loadAnimation({
+    //   container: this.element,
+    //   name: 'lottie-webjam',
+    //   renderer: 'svg',
+    //   loop: true,
+    //   autoplay: true,
+    //   path: 'assets/lottie/nasa_logo.json',
+    // });
 
     LottieInteractivity.create({
-      player: '#firstLottie',
-      mode: 'scroll',
+      player: '#monLottieInteractif',
+      mode: 'cursor',
       actions: [
         {
-          visibility: [0, 1],
-          type: 'seek',
-          frames: [0, 300],
-        },
-      ],
+            position: { x: [0, 1], y: [-1, 2] },
+            type: 'seek',
+            frames: [0, 180],
+        }
+      ]
     });
+
   }
 }
