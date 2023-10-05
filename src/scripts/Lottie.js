@@ -1,5 +1,5 @@
-import LottieWeb from "lottie-web";
-import { Create } from "@lottiefiles/lottie-interactivity";
+import '@lottiefiles/lottie-player';
+import { create } from '@lottiefiles/lottie-interactivity';
 
 export default class Lottie {
   constructor() {
@@ -16,17 +16,7 @@ export default class Lottie {
     //   path: 'assets/lottie/nasa_logo.json',
     // });
 
-    LottieInteractivity.create({
-      player: '#monLottieInteractif',
-      mode: 'cursor',
-      actions: [
-        {
-            position: { x: [0, 1], y: [-1, 2] },
-            type: 'seek',
-            frames: [0, 180],
-        }
-      ]
-    });
+
 
   }
 }

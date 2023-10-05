@@ -1,4 +1,3 @@
-import { LottieInteractivity } from '@lottiefiles/lottie-interactivity';
 import Lottie from './Lottie';
 
 class Main {
@@ -7,7 +6,7 @@ class Main {
   }
 
   init() {
-    new Lottie();
+    //new Lottie();
   }
 }
 new Main();
