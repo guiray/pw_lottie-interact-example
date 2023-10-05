@@ -7,16 +7,20 @@ export default class Lottie {
   }
 
   init() {
-    // const animation = LottieWeb.loadAnimation({
-    //   container: this.element,
-    //   name: 'lottie-webjam',
-    //   renderer: 'svg',
-    //   loop: true,
-    //   autoplay: true,
-    //   path: 'assets/lottie/nasa_logo.json',
-    // });
 
-
-
+    document.querySelector('#monLottieInteractif').addEventListener("load", ()=>{
+      console.log("allo")
+      create({
+        player: '#monLottieInteractif',
+        mode: 'cursor',
+        actions: [
+        {
+          position: { x: [0, 1], y: [-1, 2] },
+          type: 'seek',
+          frames: [0, 180],
+        }
+      ]
+      });
+    })
   }
 }

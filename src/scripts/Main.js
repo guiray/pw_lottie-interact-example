@@ -6,7 +6,7 @@ class Main {
   }
 
   init() {
-    //new Lottie();
+    new Lottie();
   }
 }
 new Main();
